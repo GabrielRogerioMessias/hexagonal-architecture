@@ -3,10 +3,12 @@ package org.projetointegrador.unifio.javawithhexagonalarchitecture.adapters.outb
 import org.projetointegrador.unifio.javawithhexagonalarchitecture.adapters.mappers.BookMapper;
 import org.projetointegrador.unifio.javawithhexagonalarchitecture.domain.book.Book;
 import org.projetointegrador.unifio.javawithhexagonalarchitecture.domain.book.BookRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Repository
 public class BookRepositoryImpl implements BookRepository {
     private final JpaBookRepository jpaBookRepository;
     private final BookMapper bookMapper;
